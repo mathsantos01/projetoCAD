@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang ="pt-BR">
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href="css/bootstrap.min.css">
+    <link rel='stylesheet' href="css/estilo.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg nav">
+        <a class="navbar-brand" href="home.html">Cad.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cadastros
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Produto</a>
+                <a class="dropdown-item" href="Cliente.html">Cliente</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="administrador.html">Administrador</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+
+<div class="container form">
+    <div class="row">
+        <div class="col-6">
+
+            <div class="card">
+            <div class="card-body">      
+               
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label>Código</label>
+                      <input type="text" class="form-control" id="cod" placeholder="Digite o Código...">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label>Nome</label>
+                      <input type="text" class="form-control" id="nome" placeholder="Digite seu Nome...">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Categoria</label>
+                    <select class="form-control" id="categoria">
+                        <option>Camisas</option>
+                        <option>Camisetas e Tops</option>
+                        <option>Jaquetas e Moletons</option>
+                        <option>Shorts e Calças</option>
+                    </select>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Preço</label>
+                        <input type="text" class="form-control" id="preco" placeholder="R$ 00,00">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Tamanho</label>
+                        <select class="form-control" id="tamanho">
+                            <option>P</option>
+                            <option>M</option>
+                            <option>G</option>
+                            <option>GG</option>
+                        </select>
+                    </div>
+                </div>
+              
+                  <button type="submit" id ="salvar"class="btn btn-primary">Cadastrar</button>       
+            </form>
+
+            </div>
+            </div>
+        </div>
+        <div class="col-6">
+            
+            <div class="card">
+            <div class="card-body">
+
+            
+            <form>
+                <div id="listagem">
+
+                </div>  
+
+            </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>    
+    
+    <script src="produto.js"></script>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

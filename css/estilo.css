@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    background-color: ghostwhite;
+}
+
+.form{
+    padding-top: 60px;
+}
+
+.login{
+    padding-top:20px;
+}
+
+.form-cliente{
+    left: 180px;
+}
+
+.img1{
+    padding-left: 400px;
+    padding-bottom: 300px;
+    padding-right: 100px;
+}
+.img2{
+
+    padding-bottom: 300px;
+
+}
+
+.iconbutton{
+    padding-bottom: 20%;
+    padding-top: 20%;
+}
+
+.iconbutton2{
+    padding-right: 100px;
+}
